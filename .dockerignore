@@ -5,4 +5,5 @@
 .travis.yml
 Makefile
 README.md
+doc/
 test/
