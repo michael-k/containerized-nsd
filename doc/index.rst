@@ -1,5 +1,5 @@
-Welcome to nsd-dnssec's documentation!
-======================================
+Welcome to dockerized-nsd's documentation!
+==========================================
 
 .. toctree::
    :maxdepth: 2
@@ -146,8 +146,8 @@ Secondary server example (optional)::
 Check your zone and nsd configuration::
 
     cd /mnt/docker/nsd
-    docker run --rm -v `pwd`/zones:/zones -ti hardware/nsd-dnssec nsd-checkzone domain.tld /zones/db.domain.tld
-    docker run --rm -v `pwd`/conf:/etc/nsd -ti hardware/nsd-dnssec nsd-checkconf /etc/nsd/nsd.conf
+    docker run --rm -v `pwd`/zones:/zones -ti michaelk/nsd nsd-checkzone domain.tld /zones/db.domain.tld
+    docker run --rm -v `pwd`/conf:/etc/nsd -ti michaelk/nsd nsd-checkconf /etc/nsd/nsd.conf
 
 
 Docker-compose
@@ -159,7 +159,7 @@ Docker-compose.yml
 ::
 
     nsd:
-      image: hardware/nsd-dnssec
+      image: michaelk/nsd
       container_name: nsd
       ports:
         - "PUBLIC_IP_ADDRESS:53:53"

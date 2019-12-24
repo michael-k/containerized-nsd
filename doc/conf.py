@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'nsd-dnssec'
-copyright = '2019, hardware'
-author = 'hardware'
+project = 'nsd'
+copyright = '2016–2019 hardware, 2019 michael-k'
+author = 'michael-k'
 
 
 # -- General configuration ---------------------------------------------------
