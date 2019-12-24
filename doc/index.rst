@@ -17,7 +17,7 @@ Features
 
 - Lightweight & secure image (no root process)
 - Based on Alpine Linux
-- Latest NSD version (4.1.27 - Mar 25, 2019)
+- Latest NSD version (4.2.4 - 2019-12-10)
 - ZSK and KSK keys, DS-Records management and zone signature with ldns
 
 
