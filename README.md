@@ -15,10 +15,12 @@ NSD is an authoritative only, high performance, simple and open source name serv
 
 ### Build-time variables
 
-- **NSD_VERSION** : version of NSD
-- **GPG_SHORTID** : short gpg key ID
-- **GPG_FINGERPRINT** : fingerprint of signing key
-- **SHA256_HASH** : SHA256 hash of NSD archive
+- **NSD_VERSION**: version of NSD
+- **GPG_SHORTID_PRIMARY**: short gpg key ID
+- **GPG_FINGERPRINT_PRIMARY**: fingerprint of signing key
+- **GPG_SHORTID_SECONDARY**: alternative short gpg key ID
+- **GPG_FINGERPRINT_SECONDARY**: fingerprint of alternative signing key
+- **SHA256_HASH**: SHA256 hash of NSD archive
 
 ### Ports
 
