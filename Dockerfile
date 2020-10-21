@@ -3,7 +3,7 @@ FROM alpine:3.12
 LABEL description "Simple DNS authoritative server with DNSSEC support" \
       maintainer="Hardware <contact@meshup.net>"
 
-ARG NSD_VERSION=4.3.1
+ARG NSD_VERSION=4.3.3
 
 # https://nlnetlabs.nl/people/
 # http://hkps.pool.sks-keyservers.net/pks/lookup?search=0x9F6F1C2D7E045F8D&fingerprint=on&op=index
@@ -14,7 +14,7 @@ ARG GPG_FINGERPRINT_PRIMARY="EDFA A3F2 CA4E 6EB0 5681  AF8E 9F6F 1C2D 7E04 5F8D"
 # pub  4096R/E7194568 2019-12-10 Jeroen Koekkoek <jeroen@nlnetlabs.nl>
 ARG GPG_SHORTID_SECONDARY="0xE7194568"
 ARG GPG_FINGERPRINT_SECONDARY="C3E3 5678 8FAD 0179 D872  D092 BA81 1E62 E719 4568"
-ARG SHA256_HASH="f4b34ace6651a81386464cc990f046e7328aa2485274fe8743086997129d8987"
+ARG SHA256_HASH="5fc6d81a977c0246b741da691acaab5c62830a8b38ce696021c26f372d8eed51"
 
 ENV UID=991 GID=991
 
